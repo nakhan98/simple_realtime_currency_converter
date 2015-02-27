@@ -7,7 +7,6 @@
 - Example:
 python currency_converter.py 15 gbp usd
 '''
-
 import sys
 import urllib2
 
@@ -19,7 +18,6 @@ currency_codes = ("AED", "AFN", "ALL", "AMD", "ANG", "AOA", "ARS", "AUD", "AWG",
 
 instructions = '''Error... python currency_converter.py amount [source currency code] [target currency code]
 Example: python currency_converter.py 15 gbp usd'''
-
 
 def get_latest_rates(source_currency, target_currency):
     query_url = api_url % (source_currency, target_currency)
